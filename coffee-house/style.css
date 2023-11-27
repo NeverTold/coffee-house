@@ -1,6 +1,14 @@
 body{
+    font-family: Inter;
     background-color:#E1D4C9;
+    display: flex;
+    width: 1440px;
+    padding: 20px 0px 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
 }
+
 h1{
     color: var(--text-dark, #403F3D);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -10,8 +18,8 @@ h1{
     font-weight: 600;
     line-height: 105%;
 }
-h1.accent{
-    color: var(--text-dark, #403F3D);
+h1 .accent{
+    color: #B0907A;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Inter;
     font-size: 72px;
@@ -28,7 +36,7 @@ h2{
     font-weight: 600;
     line-height: 125%; /* 75px */
 }
-h2.accent{
+h2 .accent{
     color: var(--text-dark, #403F3D);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Inter;
@@ -80,14 +88,14 @@ h3{
     line-height: 125%; /* 40px */
 }
 
-.header{
-    color: #403F3D;
-    background-color: #B0907A;
+.header{    
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     align-self: stretch;
+    #color: #403F3D;
+    #background-color: #B0907A;
 }
 .wrapper{
     display: flex;
@@ -98,8 +106,36 @@ h3{
     align-self: stretch;
 }
 .logo{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 60px;
+}
+.Eclipse4 {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+
+}
+.Resource{
+    display: flex;
+    position: relative;
+    bottom: 31.342px;
+    justify-content: center;
+    align-items: center;
+    width: 92.514px;
+    height: 22.342px;
+    flex-shrink: 0;
+}
+.coffee-house{
+    display: flex;
+    position: relative;
+    bottom: 19px;
+    width: 64.784px;
+    height: 5.986px;
+    flex-shrink: 0;
 }
 .header-menu{
     display: flex;
@@ -122,7 +158,22 @@ h3{
     align-items: center;
     gap: 4px;
 }
-
+.coffee-menu{
+    display: flex;
+    height: 28px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button-primary{
+    display: flex;
+    width: 200px;
+    padding: 20px 78px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--background-body, #E1D4C9);
+}
 .hero{
     display: flex;
     max-width: 1360px;
@@ -132,14 +183,8 @@ h3{
     align-items: flex-start;
     align-self: stretch;
     border-radius: 40px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    color: #B0907A;
-}
-.coffee-menu{
-    display: flex;
-    height: 28px;
-    justify-content: flex-end;
-    align-items: center;
+    background-image:url(/coffee-house/img-hero.jpg);
+    #color: #B0907A;
 }
 .wrapper-head{
     display: flex;
@@ -149,7 +194,14 @@ h3{
     align-items: center;
     align-self: stretch;
 }
-
+.offer-content{
+    display: flex;
+    width: 530px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
 .favorite-caffee{
     display: flex;
     padding: 0px 40px;
